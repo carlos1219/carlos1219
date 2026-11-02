@@ -18,7 +18,7 @@ Plataforma SAST/SCA para GitHub. Analiza cada push y pull request con **Semgrep*
 ![NAVE bloqueando una pull request con hallazgos CRITICAL y HIGH](nave-pr-bloqueada.gif)
 
 - **El escáner como superficie de ataque.** El código analizado no es de fiar: cada escaneo corre en contenedores efímeros sin red, con **gVisor** y Docker rootless, y solo un servicio aislado puede crearlos, mediante peticiones firmadas con HMAC.
-- **Seguridad documentada y comprobada.** Modelo de amenazas STRIDE, 34 decisiones de arquitectura (ADR) y una revisión como atacante con 35 hallazgos, cada corrección con su test de regresión.
+- **Seguridad documentada y comprobada.** Modelo de amenazas STRIDE, 34 decisiones de arquitectura (ADR) y una revisión como atacante con 36 hallazgos, cada corrección con su test de regresión.
 - **Cadena de suministro.** Imágenes fijadas por digest, dependencias con hash, acciones fijadas por SHA, SBOM CycloneDX, firma con cosign y OpenSSF Scorecard.
 - **Calidad.** Unos 2.900 tests, arquitectura hexagonal verificada en CI y una CI que se escanea a sí misma.
 
